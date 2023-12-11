@@ -1,0 +1,111 @@
+[Description]
+
+
+Example: else if Text.Contains([#"Code#"], "10") then "Residential"
+else if Text.Contains([Description], "") then "Dining_Out"
+else if Text.Contains([Description], "") then "Dining_Out"
+else if Text.Contains([Description], "") then "Dining_Out"
+else if Text.Contains([Description], "") then "Dining_Out"
+
+
+
+
+
+if Text.Contains([Description], "") then ""
+else if Text.Contains([Description], "") then ""
+else if Text.Contains([Type], "") then ""
+
+
+
+In Excel (or Power BI), Get Data "Power Query", from the Add Column, choose Custom Column, then use this script.
+
+--Start below here
+
+
+
+if Text.Contains([Type], "FEE_TRANSACTION") then "OD_Fees"
+else if Text.Contains([Type], "ACCT_XFER") then "Ignore_Transfers"
+
+
+else if Text.Contains([Description], "ONEMAIN") then "One_Main"
+else if Text.Contains([Description], "LES SCHWAB") then "Les_Schwab"
+else if Text.Contains([Description], "NORTH KOOTENAI WATER") then "North_Kootenai_Water"
+else if Text.Contains([Description], "KOOTENAI ELECTRIC CO") then "Kootenai_Electric"
+else if Text.Contains([Description], "PLANET FIT") then "Planet_Fitness"
+else if Text.Contains([Description], "Panhandle Waste") then "Panhandle_Waste"
+else if Text.Contains([Description], "COURSRA") then "coursera"
+else if Text.Contains([Description], "TMOBILE") then "T-Mobile"
+else if Text.Contains([Description], "Kootenai Elect") then "Kootenai_Electric"
+else if Text.Contains([Description], "Audible") then "Audible"
+else if Text.Contains([Description], "ALBERTSONS") then "Grocery"
+else if Text.Contains([Description], "SUPER 1 FOODS") then "Grocery"
+else if Text.Contains([Description], "MAVERIK") then "Gas"
+else if Text.Contains([Description], "SAFEWAY") then "Grocery"
+else if Text.Contains([Description], "WINCO") then "Grocery"
+else if Text.Contains([Description], "CHEVRON") then "Gas"
+else if Text.Contains([Description], "GROCERY") then "Grocery"
+else if Text.Contains([Description], "MILLER'S FOOD") then "Grocery"
+else if Text.Contains([Description], "QUICK STOP") then "Gas"
+else if Text.Contains([Description], "Wikimedia") then "Charity"
+else if Text.Contains([Description], "Online Transfer") then "Ignore_Transfers"
+else if Text.Contains([Description], "SPOKANE TEACHERS CREDIT UNION") then "Jens_STCU_LOC"
+else if Text.Contains([Description], "HOMELOANSERV") then "HomeLoanServ_Mortgage"
+else if Text.Contains([Description], "CONOCO") then "Gas"
+else if Text.Contains([Description], "AMZN Mktp") then "Amazon"
+else if Text.Contains([Description], "LANCASTER MARKET") then "Gas"
+else if Text.Contains([Description], "JIFI STOP") then "Gas"
+else if Text.Contains([Description], "Miller's") then ""
+else if Text.Contains([Description], "HOFFMAN MUSIC") then "TheBoysMusic"
+else if Text.Contains([Description], "TESORO") then "Gas"
+else if Text.Contains([Description], "OpenSky") then "OpenSkyCCPayment"
+else if Text.Contains([Description], "Idaho Central Credit Union") then "ICCUCCPayment"
+else if Text.Contains([Description], "DOLLAR TR") then "Grocery"
+else if Text.Contains([Description], "Nationwide Financial Services") then "457B_Loan"
+else if Text.Contains([Description], "AMERICA'S BEST") then "Medical"
+else if Text.Contains([Description], "Rite Aid") then "Medical"
+else if Text.Contains([Description], "Silverwood Theme Park") then "Silverwood_Theme_Park"
+else if Text.Contains([Description], "ExxonMobil") then "Gas"
+else if Text.Contains([Description], "Walmart") then "Grocery"
+else if Text.Contains([Description], "76") then "Gas"
+else if Text.Contains([Description], "HICO") then "Gas"
+else if Text.Contains([Description], "Ross Stores") then "Grocery"
+else if Text.Contains([Description], "HEALTH") then "Medical"
+else if Text.Contains([Description], "LEVITY") then "Household_Activity"
+else if Text.Contains([Description], "ATM") then "ATM"
+else if Text.Contains([Description], "INCYTE") then "Medical"
+
+
+
+
+else if Text.Contains([Description], "GOLDEN FLEECE FOODS") then "Dining_Out"
+else if Text.Contains([Description], "TACO") then "Dining_Out"
+else if Text.Contains([Description], "Dairy Queen") then "Dining_Out"
+else if Text.Contains([Description], "BOSTON'S BREW") then "Dining_Out"
+else if Text.Contains([Description], "FAST TRIP") then "Dining_Out"
+else if Text.Contains([Description], "Miller's Food City") then "Dining_Out"
+else if Text.Contains([Description], "5GUYS") then "Dining_Out"
+else if Text.Contains([Description], "KRISPY KREME") then "Dining_Out"
+else if Text.Contains([Description], "Burger King") then "Dining_Out"
+else if Text.Contains([Description], "COFFEE") then "Dining_Out"
+else if Text.Contains([Description], "Coffee") then "Dining_Out"
+else if Text.Contains([Description], "CAFE") then "Dining_Out"
+else if Text.Contains([Description], "RESTAURANT") then "Dining_Out"
+else if Text.Contains([Description], "Pizza") then "Dining_Out"
+else if Text.Contains([Description], "Burger") then "Dining_Out"
+else if Text.Contains([Description], "Ramen") then "Dining_Out"
+else if Text.Contains([Description], "McDonald") then "Dining_Out"
+else if Text.Contains([Description], "Panda Express") then "Dining_Out"
+else if Text.Contains([Description], "STARBUCKS") then "Dining_Out"
+else if Text.Contains([Description], "Jack in the Box") then "Dining_Out"
+else if Text.Contains([Description], "El Paisa") then "Dining_Out"
+else if Text.Contains([Description], "Espresso") then "Dining_Out"
+else if Text.Contains([Description], "RIVER CITY LANES") then "Dining_Out"
+else if Text.Contains([Description], "SOURDOUGH") then "Dining_Out"
+else if Text.Contains([Description], "MEXICAN") then "Dining_Out"
+else if Text.Contains([Description], "Denny's") then "Dining_Out"
+else if Text.Contains([Description], "THAI") then "Dining_Out"
+else if Text.Contains([Description], "BRUCHI") then "Dining_Out"
+else if Text.Contains([Description], "DRIVE THRU") then "Dining_Out"
+
+
+else null
