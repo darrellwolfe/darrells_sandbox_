@@ -1,0 +1,95 @@
+
+
+
+
+
+
+---
+title: "Fiction Genres and Subgenres"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+# install.packages("kableExtra")
+
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+
+
+
+# Creating the data frame
+fiction_genres <- data.frame(
+  Genre = c("Children's Fiction", "Fantasy", "General Fiction", "Horror", "Literary Fiction", "Mystery/Thriller", "Romance", "Science Fiction", "Western", "Commercial Fiction", "Literary Fiction Genres/Styles", "Speculative Fiction Genres"),
+  Subgenre = c(
+    "Board Books, Chapter Books, Picture Books, Young Adult",
+    "Coming of Age, Dark Fantasy, Epic, Grimdark, High Fantasy, Magic Realism, Military, Sword & Sorcery, Urban",
+    "Absurdist, Christian, Contemporary, Humor/Satire, Political, War, Women's Fiction",
+    "Gothic, Lovecraftian, Monsters, Occult, Psychological, Supernatural, Vampires",
+    "NA",
+    "Amateur Sleuths, Cozy, Hard-Boiled, Legal Thriller, Medical Thriller, Noir, Police Procedural, Psychological Thriller, Supernatural, Women Sleuths",
+    "Chicklit, Contemporary, Erotic, Gay/Lesbian, Gothic, Historical, Paranormal, Regency, Romantic Suspense, Time Travel, Young Adult, Western",
+    "Alien Invasion, Alternative History, Colonization, Cyberpunk, Dystopian, Hard SF, Military, Social SF, Space Opera, Steampunk, Time Travel",
+    "Contemporary, Cowboys and Ranches, Gunslingers, Outlaws",
+    "Adventure, Romance, Thriller, Western",
+    "Post-Modern, Stream of Consciousness",
+    "Horror, Fantasy, Science Fiction, Slipstream"
+  )
+)
+
+# Rendering the table
+fiction_genres %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+# Creating the data frame
+fiction_genres <- data.frame(
+  Genre = c("Children's Fiction", "Fantasy", "General Fiction", "Horror", "Literary Fiction", "Mystery/Thriller", "Romance", "Science Fiction", "Western", "Commercial Fiction", "Literary Fiction Genres/Styles", "Speculative Fiction Genres"),
+  Subgenre = c(
+    "Board Books, Chapter Books, Picture Books, Young Adult",
+    "Coming of Age, Dark Fantasy, Epic, Grimdark, High Fantasy, Magic Realism, Military, Sword & Sorcery, Urban",
+    "Absurdist, Christian, Contemporary, Humor/Satire, Political, War, Women's Fiction",
+    "Gothic, Lovecraftian, Monsters, Occult, Psychological, Supernatural, Vampires",
+    "NA",
+    "Amateur Sleuths, Cozy, Hard-Boiled, Legal Thriller, Medical Thriller, Noir, Police Procedural, Psychological Thriller, Supernatural, Women Sleuths",
+    "Chicklit, Contemporary, Erotic, Gay/Lesbian, Gothic, Historical, Paranormal, Regency, Romantic Suspense, Time Travel, Young Adult, Western",
+    "Alien Invasion, Alternative History, Colonization, Cyberpunk, Dystopian, Hard SF, Military, Social SF, Space Opera, Steampunk, Time Travel",
+    "Contemporary, Cowboys and Ranches, Gunslingers, Outlaws",
+    "Adventure, Romance, Thriller, Western",
+    "Post-Modern, Stream of Consciousness",
+    "Horror, Fantasy, Science Fiction, Slipstream"
+  )
+)
+
+# Rendering the table
+fiction_genres %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+
+
+
+# This code will generate a table in your R Markdown document. Each row will represent a genre, and its corresponding subgenres will be listed in the adjacent cell. Note that the subgenres are combined into a single string for each genre for simplicity. You might need to adjust or expand upon this format based on your specific requirements.
+```
+
+
+```{r echo=TRUE}
+
+#View(fiction_genres)
+
+summary(fiction_genres)
+
+colnames(fiction_genres)
+
+write.csv(fiction_genres, file = "C:/Users/darre/OneDrive/Documents/Genre_SubGenre.csv")
+
+
+```
+
+
+
+
+
+
+
+
